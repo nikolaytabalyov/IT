@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="74mm"
+   height="52mm"
+   viewBox="0 0 74 52"
+   id="SVGRoot"
+   version="1.1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     inkscape:zoom="2"
+     inkscape:cx="154.75"
+     inkscape:cy="95.75"
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="37.043558,26.74303"
+       orientation="1,0"
+       id="guide5"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="68"
+       y="13.5"
+       width="249.5"
+       height="37.5"
+       id="rect1" />
+    <rect
+       x="109"
+       y="105.5"
+       width="84"
+       height="56"
+       id="rect7" />
+    <rect
+       x="104.5"
+       y="77"
+       width="32.5"
+       height="20"
+       id="rect6" />
+    <rect
+       x="94.5"
+       y="55"
+       width="72"
+       height="22.5"
+       id="rect5" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#fec939;fill-opacity:1;stroke-width:0.483548"
+       id="circle5-3"
+       cx="-41.865299"
+       cy="-15.465305"
+       r="14.022916"
+       transform="rotate(-167.33527)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#d0ecd8;fill-opacity:1;stroke-width:0.264583"
+       id="path2"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="28.839582"
+       sodipodi:cy="28.310415"
+       sodipodi:r1="23.711227"
+       sodipodi:r2="11.903677"
+       sodipodi:arg1="0.52606641"
+       sodipodi:arg2="1.5732639"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 49.34479,40.216665 28.810209,40.214056 8.2758644,40.115321 18.545414,22.333157 28.898093,4.59926 39.163124,22.384033 Z"
+       inkscape:transform-center-x="0.69177857"
+       inkscape:transform-center-y="-1.6054073"
+       transform="translate(8.2319014,20.766842)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#cbe1a2;fill-opacity:1;stroke-width:0.264583;opacity:0.646"
+       id="path3"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="4.3656249"
+       sodipodi:cy="8.9958334"
+       sodipodi:r1="19.363905"
+       sodipodi:r2="9.7212029"
+       sodipodi:arg1="0.50643493"
+       sodipodi:arg2="1.5536325"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 21.29896,18.388542 4.5324698,18.715604 -12.235367,18.964177 -4.1353661,4.2804398 4.0332821,-10.365219 12.699771,3.991456 Z"
+       inkscape:transform-center-x="-0.16617126"
+       inkscape:transform-center-y="-6.1043556"
+       transform="matrix(1,0,0,1.2998073,14.592916,32.106312)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#8db4a9;fill-opacity:1;stroke-width:0.264583;opacity:0.64550265"
+       id="path4"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="59.266663"
+       sodipodi:cy="39.158333"
+       sodipodi:r1="37.429424"
+       sodipodi:r2="18.790585"
+       sodipodi:arg1="0.81039296"
+       sodipodi:arg2="1.8575905"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 85.063537,66.278124 53.951205,57.181428 22.881797,47.939186 46.315933,25.543463 69.854654,3.2576887 77.53285,34.750107 Z"
+       inkscape:transform-center-x="-0.012529685"
+       inkscape:transform-center-y="-6.763836"
+       transform="matrix(0.54918334,-0.20550595,0.16266582,0.69607616,17.342518,31.034137)" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-size:6.35px;white-space:pre;opacity:0.646;fill:#000000;fill-opacity:1"
+       transform="translate(0,-2.38125)"><textPath
+         xlink:href="#circle5-3"
+         id="textPath1"
+         style="font-size:6.35px">Take the Air</textPath></text>
+  </g>
+</svg>
