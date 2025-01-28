@@ -12,25 +12,28 @@
 <body>
     <header>
         <div class="hero-box">
-            <div class="hero-blocks">
-                <h1>Nikolay Tabalyov</h1>
+            <div id="hero-left-block">
+                <h1 id="hero-name">Nikolay Tabalyov</h1>
                 <h3 id="hero-title"><i>Web Developer | Problem Solver</i></h3>
             </div>
-            <nav class="hero-blocks">
-                <a href="index.html" class="nav-link">Home</a></li>
-                <a href="projects.html" class="nav-link">Projects</a></li>
-                <a href="contacts.html" class="nav-link">Contact</a></li>
+            <nav id="nav-box">
+                <a href="#introduction" class="nav-link">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contacts" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
+    
     <main>
-        <section class="introduction">
+        <section id="introduction">
             <h2>Welcome to My Portfolio</h2>
             <p>Welcome to my portfolio! Here, you’ll find a showcase of my work as a developer, where creativity meets functionality. From intuitive web applications to dynamic designs, I’m passionate about crafting solutions that deliver value and leave a lasting impact. Feel free to explore, and don’t hesitate to reach out if you’d like to collaborate!</p>
-            <a href="projects.html" class="introduction-button">View Project</a>
+            <a href="projects.html">View Project</a>
         </section>
 
-        <section class="skills">
+        <section id="skills">
             <h2>My Skills</h2>
             <div class="skill">
                 <h3 class="progress-tag">HTML</h3>
@@ -58,7 +61,7 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <section id="testimonials">
             <h2>Testimonials</h2>
             <blockquote class="testimonials-quote-block">
                 <p>"The weather app is fantastic! It’s accurate, easy to use, and looks great on both my phone and computer. The ability to search for any location and see real-time updates has been so helpful for my travel planning."</p>
@@ -81,7 +84,67 @@
                 <cite>– Emma S., Outdoor Enthusiast</cite>
             </blockquote>
         </section>
+
+        <section id="projects">
+            <h1  class="project-title">My Projects</h1>
+            <div class="project">
+                <img src="Images/personal-blog.png" alt="Personal blog" class="project-image">
+                <div class="project-description-box">
+                    <h3>Personal Blog Website</h3>
+                    <p>I built a fully responsive personal blog website where users can read and comment on posts. The site is structured with HTML, styled with CSS for a modern and clean appearance, and enhanced with JavaScript for features like a comment submission form, post search functionality, and a light/dark mode toggle.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/weather.png" alt="Weather" class="project-image">
+                <div class="project-description-box">
+                    <h3>Weather App</h3>
+                    <p>I created a weather application that displays real-time weather data for any location. The app uses HTML to structure the interface, CSS for an intuitive and modern design with weather-specific icons, and JavaScript to fetch and update data dynamically from the OpenWeatherMap API. It also includes features like a search bar and temperature unit conversion.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/TODO.png" alt="TODO" class="project-image">
+                <div class="project-description-box">
+                    <h3>Task Management Tool</h3>
+                    <p>I developed a task management tool to help users organize their daily activities. Using HTML, I structured the task list and input forms, styled the interface with CSS for a clean and user-friendly experience, and implemented features like local storage, task filtering, and drag-and-drop reordering using JavaScript.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contacts-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
+    <script>
+        document.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.classList.add("small");
+            } else {
+                header.classList.remove("small");
+            }
+        });
+    </script>
     <footer>
         <p>&copy; 2023 John Doe. All Rights Reserved.</p>
         <nav aria-label="Footer Navigation">

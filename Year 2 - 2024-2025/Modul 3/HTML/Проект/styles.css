@@ -5,10 +5,10 @@ Color Palette
 #f5f1ed - Isabelline (almost white)
 #dad2bc - Bone
 #a99985 - Khaki
-$7D8A6A - Olive Drab (green)
+#7D8A6A - Olive Drab (green)
 */
 
-h1, h2, h3, h4, h5, p, a, cite {
+h1, h2, h3, h4, h5, p, a, cite, label {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
@@ -24,15 +24,14 @@ body {
 }
 
 header {
-    background: #252323;
-    padding: 10px 0;
-    height: 200px;
-}
-
-header h1 {
     color: #dad2bc;
-    font-size: 52px;
-}
+    background: #252323;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    transition: height 0.3s ease, padding 0.3s ease;
+} 
 
 .hero-blocks {
     width: 50%;
@@ -45,8 +44,26 @@ header h1 {
     justify-content: space-around;
 }
 
-#hero-title {
-    color: #dad2bc;
+header h1 {
+    font-size: 35px;
+    transition: font-size 0.3s ease;
+}
+
+header.small  h1 {
+    font-size: 21px;
+}
+
+header a {
+    font-size: 16px;
+}
+
+header.small  a {
+    font-size: 16px;
+}
+
+header.small {
+    height: 60px;
+    margin-left: 0px;
 }
 
 nav {
@@ -61,18 +78,21 @@ nav a {
     text-decoration: none;
     padding-top: 14%;
     font-size: 23px;
+    transition: font-size 0.3 ease;
 }
 
 main {
     padding: 20px;
+    margin-top: 150px;
 }
 
-section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+#skills, #projects, #introduction, #testimonials, #contacts  {
+    padding: 2% 2%;
+    background-color: #dad2bc;
+    color: #252323;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -80,30 +100,25 @@ h2 {
     margin: 0px;
 }
 
-.introduction-button {
+#introduction a {
+    color: white;
+    text-decoration: none;
+    width: 25%;
     background-color: #7D8A6A;
     padding: 10px;
     border-radius: 10px;
 }
 
-.introduction {
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     text-align: center;
-    padding: 0px 33%;
+    padding: 2% 25%;
 }
 
-.introduction a {
-    color: white;
-    text-decoration: none;
-}
-
-.skills, .introduction, .testimonials  {
-    padding: 2% 2%;
-    background-color: #dad2bc;
-    color: #252323;
-    border-radius: 20px;
-}
-
-.skills .skill {
+.skill {
     margin-bottom: 15px;
 }
 
@@ -120,13 +135,13 @@ h2 {
 
 .progress {
     background: #7D8A6A;
-    color: white;
+    color: #f5f1ed;
     text-align: center;
     padding: 5px 0;
     border-radius: 5px;
 }
 
-.testimonials blockquote {
+#testimonials blockquote {
     border-left: 4px solid #252323;
     padding-left: 20px;
     margin: 10px 0;
@@ -138,10 +153,12 @@ h2 {
     padding-bottom: 15px;
     border-radius: 20px;
     background-color: #7D8A6A;
-    color: white;
+    color: #f5f1ed;
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     padding: 10px 0;
     background: #333;
@@ -162,7 +179,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #fff;
+    color: #f5f1ed;
     text-decoration: none;
 }
 
@@ -177,13 +194,13 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5% 0%;
 }
 
 .project-title {
     text-align: center;
     font-size: 38px;
-    margin: 1%;
+    color: #252323;
+    margin-bottom: 2%;
 }
 
 .project-description-box {
@@ -209,8 +226,8 @@ hr {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #4caf50;
-    color: white;
+    background: #7D8A6A;
+    color: #f5f1ed;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -219,6 +236,29 @@ hr {
     background: #45a049;
 }
 
+.contacts-form input, textarea {
+    width: 100%;
+}
+
+.contacts-form label {
+    text-align: left;
+    color: #252323;
+}
+
+.contacts-form button {
+    background-color: #7D8A6A;
+    width: 33%;
+    margin: 10px auto;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -238,7 +278,7 @@ form input, form textarea {
 form button {
     padding: 10px;
     background: #333;
-    color: #fff;
+    color: #f5f1ed;
     border: none;
     border-radius: 5px;
     cursor: pointer;
