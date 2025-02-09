@@ -8,7 +8,7 @@ Color Palette
 #7D8A6A - Olive Drab (green)
 */
 
-h1, h2, h3, h4, h5, p, a, cite, label {
+h1, h2, h3, h4, h5, p, a, cite, label, input, textarea {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
@@ -23,62 +23,67 @@ body {
     background-color: #a99985;
 }
 
+header.small {
+    height: 60px;
+    padding-top: 0px;
+}
 header {
-    color: #dad2bc;
+    color: #f5f1ed;
     background: #252323;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 150px;
-    transition: height 0.3s ease, padding 0.3s ease;
+    height: 125px;
+    transition: height 0.5s ease, padding 0.5s ease-out;
+    padding: 2% 0px 0px 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 } 
 
+header.small nav a {
+    font-size: 16px;
+}
+header nav a {
+    font-size: 21px;
+    color: #f5f1ed;
+    text-decoration: none;
+    padding-top: 14%;
+    transition: font-size 0.5s ease, padding-top 0.5s ease;
+}
+
+header.small h1 {
+    font-size: 18px;
+    padding-top: 4%;
+}
+header h1 {
+    font-size: 35px;
+    transition: font-size 0.5s ease, padding-top 0.5s ease;
+}
+header.small h3 {
+    font-size: 11px;
+}
+header h3 {
+    font-size: 15px;
+    transition: font-size 0.5s ease;
+}
 .hero-blocks {
     width: 50%;
 }
 
-.hero-box {
-    padding: 2% 0px 0px 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+header.small nav a {
+    padding-top: 19px;
 }
-
-header h1 {
-    font-size: 35px;
-    transition: font-size 0.3s ease;
+header.small nav {
+    height: 70px;
+    gap: 40px;
 }
-
-header.small  h1 {
-    font-size: 21px;
-}
-
-header a {
-    font-size: 16px;
-}
-
-header.small  a {
-    font-size: 16px;
-}
-
-header.small {
-    height: 60px;
-    margin-left: 0px;
-}
-
 nav {
+    height: 150px;
     display: flex;
     justify-content: flex-end;
     gap: 50px;
-    padding-right: 5%;
-}
-
-nav a {
-    color: #f5f1ed;
-    text-decoration: none;
-    padding-top: 14%;
-    font-size: 23px;
-    transition: font-size 0.3 ease;
+    transition: gap 0.5s ease, height 0.5s ease;
 }
 
 main {
@@ -156,38 +161,13 @@ h2 {
     color: #f5f1ed;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer nav ul li a {
-    color: #f5f1ed;
-    text-decoration: none;
-}
 
 hr {
     width: 80%;
     height: 3px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #a99985;
     border-radius: 200px;
+    margin: 0px auto 3% auto;
 }
 
 .project {
@@ -210,11 +190,18 @@ hr {
     justify-content: space-around;
     flex-direction: column;
     text-align: center;
+    color: #f5f1ed;
+    background-color: #7D8A6A;
+    outline: 5px solid #a99985;
+    border-radius: 500px;
+    margin-bottom: 3%;
 }
-
+.project-description-box p {
+    padding: 0px 4%;
+}
 .project-image {
     width: 20%;
-    padding: 2% 10% 0px 0px;
+    padding: 2% 10% 3% 0px;
 }
 
 .project-button {
@@ -226,18 +213,16 @@ hr {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #7D8A6A;
+    background: #a99985;
     color: #f5f1ed;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.project-link:hover {
-    background: #45a049;
-}
-
 .contacts-form input, textarea {
     width: 100%;
+    background-color: hsl(84, 13.1%, 52%);
+    color: #f5f1ed;
 }
 
 .contacts-form label {
@@ -254,7 +239,6 @@ hr {
 .contacts-form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -277,7 +261,6 @@ form input, form textarea {
 
 form button {
     padding: 10px;
-    background: #333;
     color: #f5f1ed;
     border: none;
     border-radius: 5px;
@@ -285,7 +268,7 @@ form button {
 }
 
 form button:hover {
-    background: #555;
+    background-color: hsl(84, 13.1%, 40%);
 }
 
 ul {
@@ -303,4 +286,36 @@ blockquote {
     margin: 10px 0;
     font-style: italic;
     color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav {
+    height: 60px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    height: 30px;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #f5f1ed;
+    text-decoration: none;
 }
