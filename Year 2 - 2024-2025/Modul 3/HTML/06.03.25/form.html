@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .field-box {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="/form.html">
+            <h1>Registration Form</h1>
+            <div class="field-box">
+                <label for="firstname">First Name : </label>
+                <input type="text" name="firstname" placeholder="Enter First Name">
+            </div>
+            <div class="field-box">
+                <label for="lastname">Last Name : </label>
+                <input type="text" name="lastname" placeholder="Enter Last Name">
+            </div>
+            <div class="field-box">
+                <label for="email">Email : </label>
+                <input type="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="field-box">
+                <label for="password">Password : </label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label for="gender">Gender:</label><br>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male"><br>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="Female"><br>
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="Other"><br>
+            </div>
+            <div class="field-box">
+                <label for="age">Age : </label>
+                <input type="number" name="age">
+            </div>
+            <div>
+                <label for="prefferences">Prefferences :</label><br>
+                <label for="">Acrylic Painting</label>
+                <input type="checkbox" id="acrylic-painting" name="acrylic-painting" value="Acrylic Painting"><br>
+                <label for="oil-painting">Oil Painting</label>
+                <input type="checkbox" id="oil-painting" name="oil-painting" value="Oil Painting"><br>
+                <label for="water-color-painting">Water Color Painting</label>
+                <input type="checkbox" id="water-color-painting" name="water-color-painting" value="Water Color Painting"><br>
+            </div>
+            <div class="field-box">
+                <label for="occupation">Select Occupation </label>
+                <select id="occupation" name="occupation">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                  </select>
+            </div>
+            <div class="field-box">
+                <label for="bio">Bio : </label>
+                <textarea name="bio" id="bio" placeholder="Share few lines about yourself..."></textarea>
+            </div>
+            <div>
+                <input type="reset" value="RESET">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
